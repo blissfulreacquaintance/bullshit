@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Riddle Challenge</h1>
+        
+        <div class="names">
+            <p><a href="#" id="name1" onclick="startRiddle('name1')">Alice</a></p>
+            <p><a href="#" id="name2" onclick="startRiddle('name2')" style="display: none;">Bob</a></p>
+            <p><a href="#" id="name3" onclick="startRiddle('name3')" style="display: none;">Charlie</a></p>
+            <p><a href="#" id="name4" onclick="startRiddle('name4')" style="display: none;">David</a></p>
+            <p><a href="#" id="name5" onclick="startRiddle('name5')" style="display: none;">Eve</a></p>
+            <p><a href="#" id="name6" onclick="startRiddle('name6')" style="display: none;">Frank</a></p>
+            <p><a href="#" id="name7" onclick="startRiddle('name7')" style="display: none;">Grace</a></p>
+            <p><a href="#" id="name8" onclick="startRiddle('name8')" style="display: none;">Hank</a></p>
+            <p><a href="#" id="name9" onclick="startRiddle('name9')" style="display: none;">Ivy</a></p>
+            <p><a href="#" id="name10" onclick="startRiddle('name10')" style="display: none;">Jack</a></p>
+            <p><a href="#" id="name11" onclick="startRiddle('name11')" style="display: none;">Kathy</a></p>
+            <p><a href="#" id="name12" onclick="startRiddle('name12')" style="display: none;">Liam</a></p>
+            <p><a href="#" id="name13" onclick="startRiddle('name13')" style="display: none;">Mona</a></p>
+            <p><a href="#" id="name14" onclick="startRiddle('name14')" style="display: none;">Nathan</a></p>
+            <p><a href="#" id="name15" onclick="startRiddle('name15')" style="display: none;">Olivia</a></p>
+            <p><a href="#" id="name16" onclick="startRiddle('name16')" style="display: none;">Paul</a></p>
+        </div>
+
+        <div class="riddle-container" id="riddleContainer" style="display: none;">
+            <p id="riddle"></p>
+            <input type="text" id="answer" placeholder="Type your answer...">
+            <button onclick="checkAnswer()">Submit Answer</button>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
